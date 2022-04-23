@@ -334,3 +334,8 @@ main .about-flex p.nema {
   /* outline: 2px solid skyblue; */
   width: 100%;
 }
+
+/* overlay */
+.overlay {
+  display: none;
+}
