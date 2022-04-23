@@ -1,0 +1,336 @@
+/* common */
+html { scroll-behavior: smooth;}
+
+
+html,body,h1,p,ul,li,a,img,h2,h3,footer,small,section {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family:  Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* resuponnsibu */
+.responsive {
+  display: none;
+}
+
+
+/* header */
+/* header-box */
+header .header-box {
+  width: 1000px;
+  margin: 100px auto 32px;
+  height: 160px;
+  /* outline: 2px solid skyblue; */
+}
+
+/* header-flex */
+header .header-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .header-flex img {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+header .header-flex img + img {
+  display: none;
+}
+
+header .header-flex ul {
+  display: flex;
+  font-size: 24px;
+  padding-right: 24px;
+  line-height: 3;
+}
+
+header .header-flex ul li {
+  transition: opacity .3s;
+}
+
+header .header-flex ul li:hover {
+  opacity: 0.5;
+}
+
+header .header-flex ul li + li {
+  margin-left: 16px;
+}
+
+/* header-li */
+header .header-li {
+  display: block;
+  width: 35%;
+  margin-left: auto;
+  margin-top: 64px;
+}
+
+header .header-li ul {
+  display: flex;
+}
+
+header .header-li ul li+li{
+  margin-left: 32px;
+}
+
+header .header-li ul a {
+  text-align: center;
+  transition: opacity .3s;
+}
+
+header .header-li ul a:hover {
+  text-align: center;
+  opacity: 0.5;
+  text-decoration: underline;
+}
+
+/* main */
+/* main-pic */
+main .main-pic {
+  display: flex;
+}
+
+main .main-pic img {
+  /* outline: 2px solid skyblue; */
+  margin: 0 0 24px;
+  width: 960px;
+  height: 420px;
+}
+
+main .main-pic img + img {
+  display: none;
+}
+
+main .main-pic-mask1 {
+  width: 100%;
+  height: 420px;
+  background: #7a7a7a;
+}
+
+main .main-pic-mask2 {
+  width: 100%;
+  height: 420px;
+  background: #aaa;
+}
+
+/* main-box */
+main .main-box {
+  width: 900px;
+  margin: 72px auto 64px;
+  /* outline: 2px solid skyblue; */
+}
+
+/* main-service */
+main .main-title {
+  text-align: center;
+  margin: 0 0 80px;
+}
+
+main .main-service {
+  /* outline: 2px solid skyblue; */
+  display: flex;
+  text-align: center;
+}
+
+main .main-service section + section{
+  padding-left: 32px;
+}
+
+main .main-service h2 {
+  font-weight: bold;
+}
+
+main .main-service section h3{
+  margin-top: 8px;
+  margin-bottom: 48px;
+  font-weight: normal;
+}
+
+main .main-service section i{
+  font-size: 80px;
+}
+
+main .main-service section p{
+  text-align: start;
+  margin: 48px 0 80px;
+  line-height: 32px;
+}
+
+/* main-skills */
+/* main .main-skills {
+  /* outline: 2px solid skyblue; */
+/* }  */
+
+main .main-skills ul {
+  display: flex;
+  padding-bottom: 80px;
+}
+
+main .main-skills ul section {
+  margin:0 8px;
+  border: 2px solid black;
+  padding: 88px 32px 80px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2), 0 -4px 5px -2px #aeaeae inset;
+}
+
+main .main-skills ul section li {
+  width: 140px;
+  text-align: center;
+}
+
+main .main-skills ul section li h2 {
+  padding-top: 8px;
+}
+
+/* main-works */
+main .main-works {
+  /* outline: 2px solid skyblue; */
+  padding-bottom: 80px;
+}
+
+main .main-works-content {
+  display: flex;
+}
+
+main .main-works-content section{
+  padding: 0 8px;
+}
+
+main .main-works-content section a{
+  transition: opacity .3s;
+}
+
+main .main-works-content section a img{
+  width: 280px;
+  height: 200px;
+}
+
+main .main-works-content section a:hover{
+  opacity: 0.5;
+  text-decoration: underline;
+}
+
+main .main-works-content section p{
+  text-align: center;
+}
+
+/* main-contact */
+main .main-contact {
+  /* outline: 2px solid skyblue; */
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+main .main-contact img {
+  border: 2px solid #aaa;
+  width: 900px;
+  transition: opacity .3s;
+  margin-bottom: 80px;
+}
+
+main .main-contact img:hover {
+  opacity: .5;
+}
+
+
+main .main-contact img + img {
+  display: none;
+}
+
+
+main .main-contact button {
+  background: #aaa;
+  color: #fff;
+  border: 1px solid #7a7a7a;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity .3s;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.2), 0 -4px 5px -2px #aeaeae inset;
+}
+
+main .main-contact button:hover {
+  opacity: 0.5;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2), 0 -4px 5px -2px #aeaeae inset;
+}
+
+/* footer */
+footer {
+  background: #7a7a7a;
+  height: 100px;
+  text-align: center;
+}
+
+footer .footer-content {
+  /* outline: 2px solid skyblue; */
+  color: #aaa;
+  padding: 40px;
+}
+
+/* about */
+/* about-content */
+main .about-content {
+  /* outline: 2px solid skyblue; */
+  width: 1000px;
+  margin: 100px auto 32px;
+  color: #1d1d1dbd;
+}
+
+main .about-content h1 {
+  /* outline: 2px solid skyblue; */
+  font-size: 48px;
+  font-weight: normal;
+  padding-bottom: 24px;
+}
+
+main .about-text {
+  margin: 24px 0px;
+}
+
+main .about-text p {
+  /* outline: 2px solid skyblue; */
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+
+main .about-flex {
+  display: flex;
+  /* outline: 2px solid skyblue; */
+  padding: 8px 0 40px;
+}
+
+main .about-flex img {
+  display: block;
+  width: 160px;
+  height: 160px;
+  padding-right: 34px;
+}
+
+main .about-flex p {
+  /* outline: 2px solid skyblue; */
+  line-height: 1.9;
+}
+
+main .about-flex p span {
+  color: black;
+}
+
+main .about-flex p.nema {
+  /* outline: 2px solid skyblue; */
+  width: 100%;
+}
