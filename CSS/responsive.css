@@ -6,6 +6,13 @@
     height: 160px;
     /* outline: 2px solid skyblue; */
   }
+
+
+  .animate {
+    opacity: 0;
+    transform: translatex(700px);
+    transition: opacity 6s, transform 3s;
+  }
   
 }
 
@@ -31,6 +38,14 @@
     transition: opacity .3s;
     margin-bottom: 80px;
   }
+
+
+  .animate {
+    opacity: 0;
+    transform: translatex(500px);
+    transition: opacity 6s, transform 3s;
+  }
+
 }
 
 /* 760px以下のstyle */
@@ -315,6 +330,11 @@
     transition-delay: .4s;  /* アニメーションの変化時間 */
   }
 
+  /* アニメーション */
 
-
+  .animate {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 3s, transform 3s;
+  }
 }
