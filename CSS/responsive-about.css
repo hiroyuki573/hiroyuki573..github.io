@@ -1,3 +1,6 @@
+/* common */
+
+
 /* 1000px以下のstyle */
 @media(max-width:1000px) {
   header .header-box {
