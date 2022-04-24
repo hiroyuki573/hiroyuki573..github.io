@@ -407,23 +407,24 @@ main .about-flex p.nema {
   opacity: 0;
   transform: translateY(300px);
   transition: opacity 5s, transform 3s;
-}
-
+ }
+ 
 .animate.contact {
   opacity: 0;
-  transform: translateX(500px);
+  transform: translateY(100px);
   transition: opacity 3s, transform 3s;
-}
+} 
 /* 
 .animate.footer {
   opacity: 0;
   transition: opacity 3s
 } */
 
+
 .animate.top {
   opacity: 0;
-  transform: translateX(500px);
-  transition: opacity 1s 1s, transform 1s 1s;
+  transform: translateY(100px);
+  transition: opacity 3s, transform 2s
 }
 
 .animate.link {
